@@ -1,0 +1,116 @@
+$min-col-width: 320px;
+$min-card-width: 310px;
+$bg-image: "../images/Monet_wheatstacks,snow-effect,morning.jpg";
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url($bg-image);
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: Athelas, sans-serif;
+    margin: 0;
+    padding: 4em 0em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.card {
+    background: rgba(255,255,255,.75);
+    align-items: center;
+    min-width: $min-card-width;
+    margin: 1em 1em;
+
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    transition: all 1s ease-in;
+}
+
+.card:hover {
+    background: rgba(255,255,240,1);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+h1 {
+    font-size: 10em;
+    margin: 0em;
+}
+
+h2 {
+    font-size: 3em;
+    margin: .2em 0em;
+}
+
+.col {
+    width: 50%;
+    flex: 1 auto;
+    align-items: center;
+    height: 100%;
+    min-width: $min-col-width;
+}
+
+#icons {
+    flex-flow: row wrap;
+}
+
+#left-col {
+    align-content: flex-end;
+}
+
+#right-col {
+    align-content: flex-start;
+}
+
+#yo {
+    border-bottom: .1em solid black;
+    display: inline-block;
+    line-height: .8em;
+}
+
+#main-avatar {
+    margin: 1em;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#description {
+    width: 50%;
+
+    h1 {
+        font-size: 2em;
+        margin: 1em;
+        align-self: flex-start;
+    }
+}
+
+#map {
+    width: 50%;
+    flex: 1 2;
+}
+
+#ny-gmap {
+    max-width: 280px;
+    max-height: 280px;
+    //width: 300px;
+    //height: 300px;
+    padding: 1em;
+    flex: 1 2;
+}
+
+@media (max-width: 2*$min-col-width) {
+    #left-col, #right-col {
+        align-content: center;
+    }
+}
