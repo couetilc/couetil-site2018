@@ -1,6 +1,7 @@
 $min-col-width: 320px;
 $min-card-width: 310px;
 $bg-image: "../img/Monet_wheatstacks,snow-effect,morning.jpg";
+$card-color: rgba(255,255,240,.75);
 
 html {
     height: 100%;
@@ -26,7 +27,7 @@ div {
 }
 
 .card {
-    background: rgba(255,255,255,.75);
+    background: $card-color;
     align-items: center;
     min-width: $min-card-width;
     margin: 1em 1em;
@@ -79,10 +80,28 @@ h2 {
 }
 
 #main-avatar {
-    margin: 1em;
+    margin: 0em;
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    transform: translateY(-100px);
+    border: 2px solid $card-color;
+}
+
+#intro {
+    margin: 100px 1em 1em 1em;
+
+    p {
+        margin: 0;
+        position: absolute;
+        padding: 8em 0em;
+    }
+}
+
+#icons {
+    margin: 0;
+    position: absolute;
+    padding: 10em 0em;
 }
 
 #description {
