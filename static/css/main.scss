@@ -4,8 +4,6 @@ $bg-image: "../img/Monet_wheatstacks,snow-effect,morning.jpg";
 $card-color: rgba(255,255,240,.75);
 
 html {
-    height: 100%;
-    width: 100%;
 }
 
 body {
@@ -13,8 +11,8 @@ body {
     background-size: cover;
     box-sizing: border-box;
     font-family: Athelas, sans-serif;
-    margin: 0;
-    padding: 4em 0em;
+    margin: 4em 0em 0em 0em;
+    padding: 0em 0em;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -56,7 +54,6 @@ h2 {
 .col {
     width: 50%;
     flex: 1 auto;
-    align-items: center;
     height: 100%;
     min-width: $min-col-width;
 }
@@ -67,10 +64,12 @@ h2 {
 
 #left-col {
     align-content: flex-end;
+    align-items: flex-end;
 }
 
 #right-col {
     align-content: flex-start;
+    align-items: flex-start;
 }
 
 #yo {
@@ -88,20 +87,25 @@ h2 {
     border: 2px solid $card-color;
 }
 
+#banner {
+    min-width: $min-col-width;
+    align-items: center;
+}
+
 #intro {
     margin: 100px 1em 1em 1em;
+}
 
-    p {
-        margin: 0;
-        position: absolute;
-        padding: 8em 0em;
-    }
+#resume-link {
+    margin: 0;
+    position: absolute;
+    padding: 8em 0em;
 }
 
 #icons {
-    margin: 0;
+    margin: 10em 0em;
     position: absolute;
-    padding: 10em 0em;
+    padding: 0em 0em;
 }
 
 #description {
