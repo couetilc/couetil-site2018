@@ -135,5 +135,6 @@ h2 {
 @media (max-width: 2*$min-col-width) {
     #left-col, #right-col {
         align-content: center;
+        align-items: center;
     }
 }
