@@ -34,6 +34,10 @@ h2 {
     margin: .2em 0em;
 }
 
+a.noh {
+    color: black;
+}
+
 .card {
     background: $card-color;
     align-items: center;
@@ -58,8 +62,36 @@ h2 {
     min-width: $min-col-width;
 }
 
+.icon1::before {
+    font-size: 1em;
+}
+
+.icon2::before {
+    font-size: 2em;
+}
+
+.icon3::before {
+    font-size: 3em;
+}
+
+.icon4::before {
+    font-size: 4em;
+}
+
 #icons {
     flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: -5.5em 0em 1em 0em;
+    position: relative;
+    padding: 0em 0em;
+
+    i {
+        margin: 0em .5em;
+        border-bottom: .2em dotted black;
+        display: inline-block;
+        line-height: 2em;
+    }
 }
 
 #left-col {
@@ -94,18 +126,6 @@ h2 {
 
 #intro {
     margin: 100px 1em 1em 1em;
-}
-
-#resume-link {
-    margin: 0;
-    position: absolute;
-    padding: 8em 0em;
-}
-
-#icons {
-    margin: 10em 0em;
-    position: absolute;
-    padding: 0em 0em;
 }
 
 #description {
