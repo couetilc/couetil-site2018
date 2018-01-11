@@ -1,14 +1,24 @@
-body {
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   background-image: url("../img/Monet_wheatstacks,snow-effect,morning.jpg");
   background-size: cover;
+  background-attachment: fixed; }
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: Athelas, sans-serif;
-  margin: 4em 0em 0em 0em;
+  font-family: Athelas, Times, serif;
   padding: 0em 0em;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: space-between; }
 
 div {
   display: flex;
@@ -23,26 +33,53 @@ h2 {
   margin: .2em 0em; }
 
 a.noh {
-  color: black; }
+  color: black;
+  text-decoration: none; }
+
+nav.flex-nav {
+  width: 100%;
+  margin: 0em 0em 1em 0em;
+  display: flex;
+  flex-flow: row;
+  flex: 0 1 auto;
+  justify-content: space-between;
+  font-family: Futura, Arial, sans-serif; }
+  nav.flex-nav ul {
+    display: flex;
+    flex-flow: row;
+    margin: .25em .5em;
+    padding: 0em;
+    list-style: none; }
+  nav.flex-nav li {
+    margin: 0em;
+    padding: 0em .5em; }
 
 .card {
   background: rgba(255, 255, 240, 0.75);
   align-items: center;
   min-width: 310px;
-  margin: 1em 1em;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: .5em 0em;
+  border-radius: .5em;
+  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.6);
   transition: all 1s ease-in; }
 
 .card:hover {
   background: ivory;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.8); }
 
-.col {
-  width: 50%;
-  flex: 1 auto;
-  height: 100%;
-  min-width: 320px; }
+.card-stream {
+  align-items: center;
+  justify-content: center;
+  margin: 0em 0em 0em 0em;
+  min-width: 320px;
+  max-width: 420px; }
+
+.content {
+  flex-flow: row wrap;
+  flex: 2 1 auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
 
 .icon1::before {
   font-size: 1em; }
@@ -56,26 +93,35 @@ a.noh {
 .icon4::before {
   font-size: 4em; }
 
-#icons {
+.icon-row {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: -5.5em 0em 1em 0em;
   position: relative;
+  margin: 0em 1em; }
+
+#nav-left {
+  font-weight: 800;
+  font-size: 1em;
+  letter-spacing: .15em;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center; }
+
+#nav-right {
+  font-size: 1em;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center; }
+
+#intro-icons {
+  margin: -5.5em 0em 1em 0em;
   padding: 0em 0em; }
-  #icons i {
+  #intro-icons i {
     margin: 0em .5em;
     border-bottom: .2em dotted black;
     display: inline-block;
     line-height: 2em; }
-
-#left-col {
-  align-content: flex-end;
-  align-items: flex-end; }
-
-#right-col {
-  align-content: flex-start;
-  align-items: flex-start; }
 
 #yo {
   border-bottom: .1em solid black;
@@ -95,7 +141,7 @@ a.noh {
   align-items: center; }
 
 #intro {
-  margin: 100px 1em 1em 1em; }
+  margin: 100px 0em .5em 0em; }
 
 #description {
   width: 50%; }
@@ -114,9 +160,26 @@ a.noh {
   padding: 1em;
   flex: 1 2; }
 
-@media (max-width: 640px) {
-  #left-col, #right-col {
-    align-content: center;
-    align-items: center; } }
+#footer {
+  flex: 0 1 auto;
+  justify-content: flex-end;
+  margin: 1em 0em 0em 0em; }
+
+#footer-card {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-radius: .5em .5em 0em 0em;
+  margin: .5em 0em 0em 0em; }
+
+#copyright {
+  font-size: .8em;
+  margin: 0em .5em; }
+
+@media (max-width: 639px) {
+  body {
+    height: auto; }
+
+  nav.flex-nav {
+    margin: 0em 0em 2em 0em; } }
 
 /*# sourceMappingURL=main.css.map */

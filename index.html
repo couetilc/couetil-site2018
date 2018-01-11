@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112112756-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-112112756-1');
+        </script>
+
         <title>ConnorCouetil.home</title>
         <meta name="author" content="Connor Couetil">
 
@@ -14,38 +22,70 @@
 
     </head>
     <body>
-        <div class="col" id="left-col">
-            <div id="banner">
-                <h1 id="yo">Yo.</h1>
-                <h2>I'm Connor</h1>
+        <nav class="flex-nav">
+            <div id="nav-left">
+                <ul>
+                    <li><a href="https://www.couetil.com/" class="noh">CONNOR COUETIL</a></li>
+                </ul>
+            </div>
+            <div id="nav-right">
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="card-stream">
+                <div id="banner">
+                    <h1 id="yo">Yo.</h1>
+                    <h2>I'm Connor</h1>
+                </div>
+
+                <div id="intro" class="card">
+                    <img id="main-avatar" src="static/img/connorface.jpeg" alt="connor couetil">
+
+                    <div id="intro-icons" class="icon-row">
+                        <a class="noh" title="GitHub" href="https://www.github.com/couetilc">
+                            <i class="icon2 icon-github-circled" alt="github"></i>
+                        </a>
+                        <a class="noh" title="LinkedIn" href="https://www.linkedin.com/in/connorcouetil/">
+                            <i class="icon2 icon-linkedin" alt="linkedin"></i>
+                        </a>
+                        <a class="noh" title="Resume" href="https://www.couetil.com/resume/">
+                            <i class="icon2 icon-doc-text" alt="resume"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div id="intro" class="card">
-                <img id="main-avatar" src="static/img/connorface.jpeg" alt="connor couetil">
+            <div class="card-stream">
+                <div id="description" class="card">
+                    <h1>Developer<br>
+                    Analyst<br>
+                    Consultant</h1>
+                </div>
 
-                <div id="icons">
-                    <a class="noh" title="GitHub" href="https://www.github.com/couetilc">
-                        <i class="icon2 icon-github-circled" alt="github"></i>
-                    </a>
-                    <a class="noh" title="LinkedIn" href="https://www.linkedin.com/in/connorcouetil/">
-                        <i class="icon2 icon-linkedin" alt="linkedin"></i>
-                    </a>
-                    <a class="noh" title="Resume" href="https://www.couetil.com/resume/">
-                        <i class="icon2 icon-doc-text" alt="resume"></i>
-                    </a>
+                <div id="map" class="card">
+                    <img id="ny-gmap" src="google-map" alt="Google Map of Lower Manhattan, New York">
                 </div>
             </div>
         </div>
 
-        <div class="col" id="right-col">
-            <div id="description" class="card">
-                <h1>Developer<br>
-                Analyst<br>
-                Consultant</h1>
-            </div>
-
-            <div id="map" class="card">
-                <img id="ny-gmap" src="google-map" alt="Google Map of Lower Manhattan, New York">
+        <div id="footer" class="card-stream">
+            <div id="footer-card" class="card">
+                <span class="icon-row">
+                    <a class="noh" title="Home" href="https://www.couetil.com/">
+                        <i class="icon1 icon-home" alt="Home Page"></i>
+                    </a>
+                    <a class="noh" title="GitHub" href="https://www.github.com/couetilc">
+                        <i class="icon1 icon-github-circled" alt="github"></i>
+                    </a>
+                    <a class="noh" title="LinkedIn" href="https://www.linkedin.com/in/connorcouetil/">
+                        <i class="icon1 icon-linkedin" alt="linkedin"></i>
+                    </a>
+                    <a class="noh" title="Resume" href="https://www.couetil.com/resume/">
+                        <i class="icon1 icon-doc-text" alt="resume"></i>
+                    </a>
+                </span>
+                <span id="copyright">connor couetil 2018 ©</span>
             </div>
         </div>
     </body>

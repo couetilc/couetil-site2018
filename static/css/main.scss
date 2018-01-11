@@ -1,22 +1,31 @@
-$min-col-width: 320px;
+$min-stream-width: 320px;
+$max-stream-width: 420px;
 $min-card-width: 310px;
 $bg-image: "../img/Monet_wheatstacks,snow-effect,morning.jpg";
 $card-color: rgba(255,255,240,.75);
 
 html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url($bg-image);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 body {
-    background-image: url($bg-image);
-    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: Athelas, sans-serif;
-    margin: 4em 0em 0em 0em;
+    font-family: Athelas, Times, serif;
     padding: 0em 0em;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 div {
@@ -36,30 +45,61 @@ h2 {
 
 a.noh {
     color: black;
+    text-decoration: none;
+}
+
+nav.flex-nav {
+    width: 100%;
+    margin: 0em 0em 1em 0em;
+    display: flex;
+    flex-flow: row;
+    flex: 0 1 auto;
+    justify-content: space-between;
+    font-family: Futura, Arial, sans-serif;
+
+    ul {
+        display: flex;
+        flex-flow: row;
+        margin: .25em .5em;
+        padding: 0em;
+        list-style: none;
+    }
+
+    li {
+        margin: 0em;
+        padding: 0em .5em;
+    }
 }
 
 .card {
     background: $card-color;
     align-items: center;
     min-width: $min-card-width;
-    margin: 1em 1em;
-
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
+    margin: .5em 0em;
+    border-radius: .5em;
+    box-shadow: 0 .5em 1em 0 rgba(0,0,0,0.6);
     transition: all 1s ease-in;
 }
 
 .card:hover {
     background: rgba(255,255,240,1);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 1em 2em 0 rgba(0,0,0,0.8);
 }
 
-.col {
-    width: 50%;
-    flex: 1 auto;
-    height: 100%;
-    min-width: $min-col-width;
+.card-stream {
+    align-items: center;
+    justify-content: center;
+    margin: 0em 0em 0em 0em;
+    min-width: $min-stream-width;
+    max-width: $max-stream-width;
+}
+
+.content {
+    flex-flow: row wrap;
+    flex: 2 1 auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .icon1::before {
@@ -78,12 +118,32 @@ a.noh {
     font-size: 4em;
 }
 
-#icons {
+.icon-row {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    margin: -5.5em 0em 1em 0em;
     position: relative;
+    margin: 0em 1em;
+}
+
+#nav-left {
+    font-weight: 800;
+    font-size: 1em;
+    letter-spacing: .15em;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+}
+
+#nav-right {
+    font-size: 1em;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+}
+
+#intro-icons {
+    margin: -5.5em 0em 1em 0em;
     padding: 0em 0em;
 
     i {
@@ -92,16 +152,6 @@ a.noh {
         display: inline-block;
         line-height: 2em;
     }
-}
-
-#left-col {
-    align-content: flex-end;
-    align-items: flex-end;
-}
-
-#right-col {
-    align-content: flex-start;
-    align-items: flex-start;
 }
 
 #yo {
@@ -120,12 +170,12 @@ a.noh {
 }
 
 #banner {
-    min-width: $min-col-width;
+    min-width: $min-stream-width;
     align-items: center;
 }
 
 #intro {
-    margin: 100px 1em 1em 1em;
+    margin: 100px 0em .5em 0em;
 }
 
 #description {
@@ -146,15 +196,34 @@ a.noh {
 #ny-gmap {
     max-width: 280px;
     max-height: 280px;
-    //width: 300px;
-    //height: 300px;
     padding: 1em;
     flex: 1 2;
 }
 
-@media (max-width: 2*$min-col-width) {
-    #left-col, #right-col {
-        align-content: center;
-        align-items: center;
+#footer {
+    flex: 0 1 auto;
+    justify-content: flex-end;
+    margin: 1em 0em 0em 0em;
+}
+
+#footer-card {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-radius: .5em .5em 0em 0em;
+    margin: .5em 0em 0em 0em;
+}
+
+#copyright {
+    font-size: .8em;
+    margin: 0em .5em;
+}
+
+@media (max-width: 2 * $min-stream-width - 1) {
+    body {
+        height: auto;
+    }
+
+    nav.flex-nav {
+        margin: 0em 0em 2em 0em;
     }
 }
