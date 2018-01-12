@@ -54,21 +54,7 @@ nav.flex-nav {
     display: flex;
     flex-flow: row;
     flex: 0 1 auto;
-    justify-content: space-between;
     font-family: Futura, Arial, sans-serif;
-
-    ul {
-        display: flex;
-        flex-flow: row;
-        margin: .25em .5em;
-        padding: 0em;
-        list-style: none;
-    }
-
-    li {
-        margin: 0em;
-        padding: 0em .5em;
-    }
 }
 
 .card {
@@ -78,7 +64,7 @@ nav.flex-nav {
     margin: .5em 0em;
     border-radius: .5em;
     box-shadow: 0 .5em 1em 0 rgba(0,0,0,0.6);
-    transition: all 1s ease-in;
+    transition: all 1s ease-out;
 }
 
 .card:hover {
@@ -124,22 +110,6 @@ nav.flex-nav {
     align-items: center;
     position: relative;
     margin: 0em 1em;
-}
-
-#nav-left {
-    font-weight: 800;
-    font-size: 1em;
-    letter-spacing: .15em;
-    justify-content: center;
-    align-items: baseline;
-    align-content: center;
-}
-
-#nav-right {
-    font-size: 1em;
-    justify-content: center;
-    align-items: baseline;
-    align-content: center;
 }
 
 #intro-icons {
