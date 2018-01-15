@@ -71,17 +71,21 @@ nav.flex-nav {
   align-items: center;
   align-content: center; }
 
-.icon1::before {
-  font-size: 1em; }
+.icon1 {
+  width: 1em !important;
+  length: 1em !important; }
 
-.icon2::before {
-  font-size: 2em; }
+.icon2 {
+  width: 2em !important;
+  length: 2em !important; }
 
-.icon3::before {
-  font-size: 3em; }
+.icon3 {
+  width: 3em !important;
+  length: 3em !important; }
 
-.icon4::before {
-  font-size: 4em; }
+.icon4 {
+  width: 4em !important;
+  length: 4em !important; }
 
 .icon-row {
   flex-flow: row wrap;
@@ -93,12 +97,10 @@ nav.flex-nav {
 #intro-icons {
   margin: -5.5em 0em 1em 0em;
   padding: 0em 0em; }
-  #intro-icons i {
-    margin: 0em .5em;
-    border-bottom: .2em dotted black;
-    border-width: .3em;
-    display: inline-block;
-    line-height: 2em; }
+  #intro-icons svg {
+    margin: 0em .75em;
+    padding: 0em;
+    border-bottom: .3em dotted black; }
 
 #yo {
   border-bottom: .1em solid black;
