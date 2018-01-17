@@ -127,6 +127,12 @@ nav.flex-nav {
   transform: translateY(-100px);
   border: 2px solid rgba(255, 255, 240, 0.75); }
 
+#glasses {
+  position: absolute;
+  height: 67px;
+  width: 67px;
+  transform: rotate(-5deg) translate(1px, -32px); }
+
 #banner {
   min-width: 320px;
   align-items: center; }

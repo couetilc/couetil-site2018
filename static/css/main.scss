@@ -157,6 +157,13 @@ nav.flex-nav {
     border: 2px solid $card-color;
 }
 
+#glasses {
+    position: absolute;
+    height: 67px;
+    width: 67px;
+    transform: rotate(-5deg) translate(1px, -32px);
+}
+
 #banner {
     min-width: $min-stream-width;
     align-items: center;
