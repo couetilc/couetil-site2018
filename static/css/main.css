@@ -129,8 +129,8 @@ nav.flex-nav {
 
 #glasses {
   position: absolute;
-  height: 67px;
-  width: 67px;
+  height: 67px !important;
+  width: 67px !important;
   transform: rotate(-5deg) translate(1px, -32px); }
 
 #banner {
