@@ -64,7 +64,6 @@ nav.flex-nav {
     margin: .5em 0em;
     border-radius: .5em;
     box-shadow: 0 .5em 1em 0 rgba(0,0,0,0.6);
-    transition: all 1s ease-out;
 }
 
 .card:hover {
@@ -82,7 +81,7 @@ nav.flex-nav {
 
 .content {
     flex-flow: row wrap;
-    flex: 2 1 auto;
+    flex: 2 0 auto;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -210,7 +209,7 @@ nav.flex-nav {
 }
 
 #footer {
-    flex: 0 1 auto;
+    flex: 0 0 auto;
     justify-content: flex-end;
     margin: 1em 0em 0em 0em;
 }
