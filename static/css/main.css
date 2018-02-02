@@ -50,7 +50,8 @@ nav.flex-nav {
   min-width: 310px;
   margin: .5em 0em;
   border-radius: .5em;
-  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.6); }
+  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.6);
+  transition: background .5s ease-in 0s, box-shadow .5s ease-in 0s; }
 
 .card:hover {
   background: ivory;
